@@ -62,6 +62,7 @@ Calendar cal = Calendar.getInstance();
 %>
 
 <%!
+### 날자를 받아서 year, month, day를 설정한다. ###
     public boolean isDate(int m, int d, int y) // This method is used to check for a VALID date
     {
         m -= 1;
@@ -82,6 +83,7 @@ Calendar cal = Calendar.getInstance();
     }
 %>
 <%!
+### 달을 받아서 월 처리를 한다 ###
    public String getDateName (int monthNumber) // This method is used to quickly return the proper name of a month
    {
 		String strReturn = "";
